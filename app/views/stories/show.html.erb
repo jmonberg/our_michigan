@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @story.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @story.body %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @story.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @story.updated_at %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @story.url %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @story.location %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @story.username %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @story.user_id %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @story.image_url %>
+</p>
+
+<p>
+  <strong>Suspended at:</strong>
+  <%= @story.suspended_at %>
+</p>
+
+<p>
+  <strong>Suspension status:</strong>
+  <%= @story.suspension_status %>
+</p>
+
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %>
