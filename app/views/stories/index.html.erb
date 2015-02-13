@@ -1,12 +1,18 @@
-<h1>Listing stories</h1>
+<% content_for :topbar do %>
+  <div id="banner_text">
+    <p id="welcome">Share Stories</p>
+    <p>Share something you've experienced or a memory associated with Michigan Avenue, and read other people's stories.</p>
+
+  </div>
+<% end %>
+
+<h1>Recent Stories</h1>
 
 <table>
   <thead>
     <tr>
       <th>Title</th>
       <th>Body</th>
-      <th>Created at</th>
-      <th>Updated at</th>
       <th>Url</th>
       <th>Location</th>
       <th>Username</th>
@@ -23,8 +29,6 @@
       <tr>
         <td><%= story.title %></td>
         <td><%= story.body %></td>
-        <td><%= story.created_at %></td>
-        <td><%= story.updated_at %></td>
         <td><%= story.url %></td>
         <td><%= story.location %></td>
         <td><%= story.username %></td>
